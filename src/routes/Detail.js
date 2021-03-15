@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Detail extends Component {
   componentDidMount() {
     const { location, history } = this.props;
-    console.log(location.state);
     if (location.state === undefined) {
       history.push('/');
     }
